@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <script>
+            tailwind.config = {
+                theme: {
+                extend: {
+                    colors: {
+                    darkBlue: '#131b2f',
+                    yellowAccent: '#fdcd02',
+                    
+                    }
+                }
+                }
+            }
+        </script>
+
+        <title>Super Automotriz MG</title>
+
+    </head>
+    <body>
+        <!-- nav bar -->
+        <nav class="bg-darkBlue 500 p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <img src="/img/logo/logo.png" alt="Logo Super Automotriz MG" class="w-35 h-20">
+                <ul class="flex space-x-10">
+                    <li><a href="#" class="text-white font-bold hover:text-yellowAccent">INICIO</a></li>
+                    <li><a href="#" class="text-white font-bold hover:text-yellowAccent">NOSOTROS</a></li>
+                    <li><a href="#" class="text-white font-bold hover:text-yellowAccent">SERVICIOS</a></li>
+                    <li><a href="#" class="text-white font-bold hover:text-yellowAccent">CONTACTO</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- header -->
+        <div class="relative">
+            <img src="/img/background/outside.png" alt="Image with Overlay" class="w-full ">
+            <div class="absolute inset-0 bg-darkBlue opacity-50"></div>
+            <div class="absolute inset-0 flex justify-center items-center">
+                <div class="text-white text-center">
+                    <h2 class="text-2xl font-semibold">Welcome to our Website</h2>
+                    <p class="mt-2">Discover amazing content and services.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
