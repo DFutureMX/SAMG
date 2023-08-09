@@ -3,6 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+        <!--Custom css-->
+        <link rel="stylesheet" href="styles.css">
+        <!--Tailwind-->
+
         <script src="https://cdn.tailwindcss.com"></script>
 
         <script>
@@ -12,7 +19,10 @@
                     colors: {
                     darkBlue: '#131b2f',
                     yellowAccent: '#fdcd02',
-                    
+                    borderWidth: {
+                        '12': '12px',
+                        // Add more custom border widths as needed
+                    },
                     }
                 }
                 }
@@ -29,23 +39,153 @@
                 <img src="/img/logo/logo.png" alt="Logo Super Automotriz MG" class="w-35 h-20">
                 <ul class="flex space-x-10">
                     <li><a href="#" class="text-white font-bold hover:text-yellowAccent">INICIO</a></li>
-                    <li><a href="#" class="text-white font-bold hover:text-yellowAccent">NOSOTROS</a></li>
-                    <li><a href="#" class="text-white font-bold hover:text-yellowAccent">SERVICIOS</a></li>
-                    <li><a href="#" class="text-white font-bold hover:text-yellowAccent">CONTACTO</a></li>
+                    <li><a href="#servicios" class="text-white font-bold hover:text-yellowAccent">SERVICIOS</a></li>
+                    <li><a href="#nosotros" class="text-white font-bold hover:text-yellowAccent">NOSOTROS</a></li>
+                    <li><a href="#contacto" class="text-white font-bold hover:text-yellowAccent">CONTACTO</a></li>
                 </ul>
             </div>
         </nav>
 
         <!-- header -->
         <div class="relative">
-            <img src="/img/background/outside.png" alt="Image with Overlay" class="w-full ">
+            <img src="/img/background/outside.png" alt="Imagen del taller mecánico" class="w-full ">
             <div class="absolute inset-0 bg-darkBlue opacity-50"></div>
             <div class="absolute inset-0 flex justify-center items-center">
-                <div class="text-white text-center">
-                    <h2 class="text-2xl font-semibold">Welcome to our Website</h2>
-                    <p class="mt-2">Discover amazing content and services.</p>
+                <div class="container-header">
+                    <div class="text-white text-center">
+                        <h1 class="lg:text-6xl font-extrabold uppercase text-header">Tu confianza en el taller, nuestra excelencia en cada reparación</h1>
+                        <p class="mt-6 font-semibold text-2xl">Servicios de mecánica</p>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <!-- yellow division-->
+        <div class="h-10 bg-yellowAccent"></div>
+
+        <!--Servicios-->
+        <div class="m-20">
+            <div class="flex justify-center items-center" id="servicios">
+                    <p class="text-4xl font-bold uppercase text-darkBlue border-b-4 border-yellowAccent">Nuestros servicios</p>
+            </div>
+            <!--Afinación-->
+            <div class="px-4 py-8 mt-10">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-12">
+                    <!-- Column 1 -->
+                    <div class="w-full lg:w-1/2">
+                        <div class="px-4 py-8">
+                            <div class="flex items-center"> <!-- Added items-center class -->
+                                <!-- Column 1 -->
+                                <div class="p-4 bg-yellowAccent justify-center items-center">
+                                    <img src="/img/icons/icons8-motor-100.png" alt="Icono de frenos" class="w-20 h-20">
+                                </div>
+                                <!-- Column 2 -->
+                                <div class="p-4">
+                                    <p class="text-4xl font-bold uppercase text-darkBlue">Afinación</p>
+                                </div>
+                            </div>
+                            <div class="py-8 text-xl">
+                                <p class="text-justify">
+                                    Consiste en una limpieza detallada de alguno de los componentes 
+                                    del motor y en la sustitución de partes que, por su uso normal, ose desgastan
+                                    o pierden su efectividad en su funcionamiento.
+                                </p>
+                                </br>
+                                <p class="text-justify">
+                                    Realizar la afinación en los autos ayuda a mejorar el rendimiento de combustible, 
+                                    mejora el desempeño del motor, reduce las emisiones contaminantes y mejora
+                                    el encendido del vehiculo.
+                                </p>
+
+                            </div>
+                        </div>
+           
+                        
+                    </div>
+            
+                    <!-- Column 2 -->
+                    <div class="w-full lg:w-1/2 flex justify-center items-center">
+                        <img src="/img/servicios/sten-rademaker-UZUzvJEvKnI-unsplash.jpg" alt="Icono de frenos" class="border-8 border-yellowAccent"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Frenos-->
+            <div class="px-4 py-8 mt-10">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-12">
+                    <!-- Column 1 -->
+                    <div class="w-full lg:w-1/2 flex justify-center items-center">
+                        <img src="/img/servicios/pexels-jay-pizzle-4022545.jpg" alt="Icono de frenos" class="border-8 border-yellowAccent"/>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="w-full lg:w-1/2">
+                        <div class="px-4 py-8">
+                            <div class="flex items-center"> <!-- Added items-center class -->
+                                <!-- Column 1 -->
+                                <div class="p-4 bg-yellowAccent justify-center items-center">
+                                    <img src="/img/icons/icons8-car-break-64.png" alt="Icono de frenos" class="w-20 h-20">
+                                </div>
+                                <!-- Column 2 -->
+                                <div class="p-4">
+                                    <p class="text-4xl font-bold uppercase text-darkBlue">Frenos</p>
+                                </div>
+                            </div>
+                            <div class="py-8 text-xl">
+                                <p class="text-justify">
+                                    Se recomienda controlar los frenos cada 15.000/20.000 kilómetros. Si bien deberá realizarse inmediatamente cuando se produzcan variaciones. Las principales señales que indican el desgaste o deterioro del disco y las pastillas son: 
+                                </p>
+                                </br>
+                                <p class="text-justify">
+                                    <ul class="list-disc p-6">
+                                        <li>Encendido del testigo de señalización (si lo hay, solo para las pastillas)</li>
+                                        <li>Ruidos durante la frenada</li>
+                                        <li>Presencia de vibraciones</li>
+                                        <li>Presencia de líneas circulares profundas o grietas radiales en la banda de frenado</li>
+                                        <li>Señales de sobrecalentamiento</li>
+                                    </ul>
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Direccion y suspension-->
+            <div class="px-4 py-8 mt-10">
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-12">
+                    <!-- Column 1 -->
+                    <div class="w-full lg:w-1/2">
+                        <div class="px-4 py-8">
+                            <div class="flex items-center"> <!-- Added items-center class -->
+                                <!-- Column 1 -->
+                                <div class="p-4 bg-yellowAccent justify-center items-center">
+                                    <img src="/img/icons/icons8-suspension-dampers-100.png" alt="Icono de frenos" class="w-20 h-20">
+                                </div>
+                                <!-- Column 2 -->
+                                <div class="p-4">
+                                    <p class="text-4xl font-bold uppercase text-darkBlue">Direccion y suspensión</p>
+                                </div>
+                            </div>
+                            <div class="py-8 text-xl">
+                                <p class="text-justify">
+                                    Los sistemas de dirección y suspensión son sistemas clave relacionados con la seguridad que determinan en gran parte la conducción y maniobrabilidad de su atomóvil.
+                                </p>
+                            </div>
+                        </div>
+           
+                        
+                    </div>
+            
+                    <!-- Column 2 -->
+                    <div class="w-full lg:w-1/2 flex justify-center items-center">
+                        <img src="/img/servicios/tory-bishop-vY-WNTNfXR0-unsplash.jpg" alt="Icono de frenos" class="border-8 border-yellowAccent"/>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </body>
 </html>
