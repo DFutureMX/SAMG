@@ -48,12 +48,18 @@ img{
         margin: 5rem;
         
     }
+    .divisor-mision{
+        height: 40vh;
+    }
 }
 
 
 @media (min-width: 1300px) {
     .container-header {
         margin: 20rem;
+    }
+    .divisor-mision{
+        height: 60vh;
     }
 }
 
@@ -92,6 +98,11 @@ ul.custom li.custom::before {
     display: inline-block; 
     width: 1em;
     margin-left: -1em;
+}
+
+
+.divisor-mision{
+    object-fit: cover;
 }
 
 
