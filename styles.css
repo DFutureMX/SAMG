@@ -42,15 +42,22 @@ img{
 }
 
 
+@media (max-width: 768px) {
+    .container-header-servicios {
+        padding: 2rem;
+    }
+}
+
 
 @media (min-width: 769px) {
     .container-header{
         margin: 5rem;
         
     }
-    .divisor-mision{
-        height: 40vh;
+    .container-header-servicios {
+        padding: 5rem;
     }
+
 }
 
 
@@ -58,11 +65,15 @@ img{
     .container-header {
         margin: 20rem;
     }
-    .divisor-mision{
-        height: 60vh;
+    .container-header-servicios {
+        margin: 20rem;
     }
 }
 
+.divisor-mision{
+    height: 60vh;
+    object-fit: cover;
+}
 
 
 
@@ -98,11 +109,6 @@ ul.custom li.custom::before {
     display: inline-block; 
     width: 1em;
     margin-left: -1em;
-}
-
-
-.divisor-mision{
-    object-fit: cover;
 }
 
 
