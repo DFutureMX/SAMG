@@ -35,10 +35,12 @@ img{
     transform: rotate(90deg);
 }
 
-/* Adjust navigation list for smaller screens */
-@media (max-width: 768px) {
-
+.header-image{
+    height: 100vh;
+    object-fit: cover;
+    margin-top: 5rem;
 }
+
 
 
 @media (min-width: 769px) {
@@ -48,10 +50,10 @@ img{
     }
 }
 
+
 @media (min-width: 1300px) {
-    .container-header{
+    .container-header {
         margin: 20rem;
-        
     }
 }
 

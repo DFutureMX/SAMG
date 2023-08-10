@@ -137,7 +137,7 @@
 
         <!-- header -->
         <div class="relative">
-            <img src="img/background/outside2.png" alt="Imagen del taller mecánico" style="height: 100vh; object-fit: cover; margin-top: 5rem;">
+            <img src="img/background/outside2.png" alt="Imagen del taller mecánico" class="header-image">
             <div class="absolute inset-0 bg-darkBlue opacity-50"></div>
             <div class="absolute inset-0 flex justify-center items-center">
                 <div class="container-header">
@@ -150,12 +150,12 @@
         </div>
 
         <!-- yellow division-->
-        <div class="h-10 bg-yellowAccent"></div>
+        <div class="h-10 bg-yellowAccent mb-10"></div>
 
         <!--Servicios-->
-        <div class="m-20">
+        <div class="pb-10 lg:m-20">
             <div class="flex justify-center items-center" id="servicios">
-                <p class="text-4xl font-bold uppercase text-darkBlue border-b-4 border-yellowAccent animate__animated animate-on-scroll" data-aos="animate__fadeIn">Nuestros servicios</p>
+                <p class="text-center text-4xl font-bold uppercase text-darkBlue border-b-4 border-yellowAccent animate__animated animate-on-scroll" data-aos="animate__fadeIn">Nuestros servicios</p>
             </div>
             <!--Afinación-->
             <div class="px-4 py-8 mt-10">
@@ -203,8 +203,8 @@
             <!--Frenos-->
             <div class="px-4 py-8 mt-10">
                 <div class="flex flex-col lg:flex-row gap-6 lg:gap-12">
-                    <!-- Column 1 -->
-                    <div class="w-full lg:w-1/2 flex justify-center items-center">
+                    <!-- Column 1 Only visible in desktop-->
+                    <div class="w-full lg:w-1/2 flex justify-center items-center  lg:block hidden">
                         <img src="img/servicios/pexels-jay-pizzle-4022545.jpg" alt="Icono de frenos" class="border-8 border-yellowAccent"/>
                     </div>
                     <!-- Column 2 -->
@@ -238,6 +238,10 @@
 
                             </div>
                         </div>
+                    </div>
+                    <!-- Column 2  in mobile-->
+                    <div class="w-full lg:w-1/2 flex justify-center items-center lg:hidden">
+                        <img src="img/servicios/pexels-jay-pizzle-4022545.jpg" alt="Icono de frenos" class="border-8 border-yellowAccent"/>
                     </div>
                 </div>
             </div>
@@ -274,18 +278,17 @@
                     </div>
                 </div>
             </div>
-            
         </div>
 
         <!--Mision overlay division-->
         <div class="relative">
-            <img src="img/background/mision.png" alt="Imagen del taller mecánico" class="w-full ">
+            <img src="img/background/mision.png" alt="Imagen del taller mecánico" class="w-full">
             <div class="absolute inset-0 bg-darkBlue opacity-70"></div>
             <div class="absolute inset-0 flex justify-center items-center">
                 <div class="container-header">
                     <div class="text-white text-center">
                         <p class="lg:text-5xl font-bold uppercase animate__animated animate-on-scroll" data-aos="animate__zoomIn">Nuestra misón</p>
-                        <p class="mt-6 text-2xl">
+                        <p class="mt-6  lg:text-2xl">
                             Proporcionar servicios automotrices de la más alta calidad en México.  Brindando a nuestros clientes la tranquilidad de un funcionamiento seguro y óptimo de sus vehículos.
                         </p>
                     </div>
@@ -295,7 +298,7 @@
 
 
         <!--Elegirnos-->
-        <div class="m-20">
+        <div class="lg:m-20">
             <div class="px-4 py-8 mt-10">
                 <div class="flex flex-col lg:flex-row gap-6 lg:gap-12">
                     <!-- Column 1 -->
@@ -305,7 +308,7 @@
                                 <!-- Column 2 -->
                                 <div class="">
                                     <div class="" id="nosotros">
-                                        <p class="text-4xl font-bold uppercase text-darkBlue border-b-4 border-yellowAccent animate__animated animate-on-scroll" data-aos="animate__fadeInLeft">Nuestros servicios</p>
+                                        <p class="text-center text-4xl font-bold uppercase text-darkBlue border-b-4 border-yellowAccent animate__animated animate-on-scroll" data-aos="animate__fadeInLeft">Nuestros servicios</p>
                                     </div>
                                 </div>
                             </div>
@@ -331,7 +334,7 @@
                                 </div>
                                 <!-- Column 2 -->
                                 <div class="p-4">
-                                    <p class="text-4xl font-bold uppercase text-darkBlue">Excelencia</p>
+                                    <p class="sm:text-2xl md:text-4xl lg:text-4xl font-bold uppercase text-darkBlue">Excelencia</p>
                                 </div>
                             </div>
                             <div class="flex items-center mb-8"> <!-- Added items-center class -->
@@ -341,7 +344,7 @@
                                 </div>
                                 <!-- Column 2 -->
                                 <div class="p-4">
-                                    <p class="text-4xl font-bold uppercase text-darkBlue">Atención personalizada</p>
+                                    <p class="sm:text-2xl md:text-4xl lg:text-4xl font-bold uppercase text-darkBlue">Atención personalizada</p>
                                 </div>
                             </div>
                             <div class="flex items-center mb-8"> <!-- Added items-center class -->
@@ -351,7 +354,7 @@
                                 </div>
                                 <!-- Column 2 -->
                                 <div class="p-4">
-                                    <p class="text-4xl font-bold uppercase text-darkBlue">Fiabilidad</p>
+                                    <p class="sm:text-2xl md:text-4xl lg:text-4xl font-bold uppercase text-darkBlue">Fiabilidad</p>
                                 </div>
                             </div>
                         </div>
@@ -361,7 +364,7 @@
         </div>
 
         <!--Contacto-->
-        <div class="m-20">
+        <div class="lg:m-20">
             <div class="px-4 py-8 mt-10">
                 <div class="flex flex-col lg:flex-row gap-6 lg:gap-12 justify-center items-center">
                     <!-- Column 1 -->
@@ -392,7 +395,7 @@
                                     </div>
                                     <!-- Column 2 -->
                                     <div class="p-4">
-                                        <p class="text-xl text-darkBlue hover:text-yellowAccent"><a href="https://goo.gl/maps/XasfCAP6B9orXQ8k7">Abedul 5302, Valle de Los Cedros, 64360 Monterrey, N.L.</a></p>
+                                        <p class="lg:text-xl text-darkBlue hover:text-yellowAccent"><a href="https://goo.gl/maps/XasfCAP6B9orXQ8k7">Abedul 5302,</br>  Valle de Los Cedros,</br> 64360 Monterrey, N.L.</a></p>
                                     </div>
                                 </div>
                                 <div class="flex items-center mb-8"> <!-- Added items-center class -->
@@ -402,7 +405,7 @@
                                     </div>
                                     <!-- Column 2 -->
                                     <div class="p-4">
-                                        <p class="text-xl text-darkBlue hover:text-yellowAccent"><a href="tel:528122004116">+52 81 22 00 41 16</a></p>
+                                        <p class="lg:text-xl text-darkBlue hover:text-yellowAccent"><a href="tel:528122004116">+52 81 22 00 41 16</a></p>
                                     </div>
                                 </div>
                                 <div class="flex items-center mb-8"> <!-- Added items-center class -->
@@ -412,7 +415,7 @@
                                     </div>
                                     <!-- Column 2 -->
                                     <div class="p-4">
-                                        <p class="text-xl text-darkBlue hover:text-yellowAccent"><a href="https://api.whatsapp.com/send?phone=5218122004116&text=Hola!%20Me%20interesan%20los%20servicios%20de%20mec%C3%A1nica%20que%20ofrecen%20%F0%9F%91%A9%E2%80%8D%F0%9F%94%A7">+52 81 22 00 41 16</a></p>
+                                        <p class="lg:text-xl text-darkBlue hover:text-yellowAccent"><a href="https://api.whatsapp.com/send?phone=5218122004116&text=Hola!%20Me%20interesan%20los%20servicios%20de%20mec%C3%A1nica%20que%20ofrecen%20%F0%9F%91%A9%E2%80%8D%F0%9F%94%A7">+52 81 22 00 41 16</a></p>
                                     </div>
                                 </div>
                             </div>
