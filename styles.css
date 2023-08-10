@@ -11,30 +11,44 @@ img{
     user-drag: none;
 }
 
+.sticky-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.sticky-nav-menu {
+    position: fixed;
+    width: 100%;
+    top:110px;
+    z-index: 1000; /* Ensure it's above other content */
+}
 
 /* Responsive Hamburger Menu */
-#hamburger {
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s;
+#hamburger i {
+    font-size: 24px; /* You can adjust the size as needed */
+    transition: transform 0.3s ease-in-out;
 }
 
-#hamburger:focus {
-    outline: none;
-}
-
-#hamburger.open {
+#hamburger.clicked i {
     transform: rotate(90deg);
 }
 
 /* Adjust navigation list for smaller screens */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
 }
 
-@media (min-width: 768px) {
+
+@media (min-width: 769px) {
+    .container-header{
+        margin: 5rem;
+        
+    }
+}
+
+@media (min-width: 1300px) {
     .container-header{
         margin: 20rem;
         

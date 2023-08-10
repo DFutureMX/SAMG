@@ -89,27 +89,29 @@
             });
         </script>
 
-        <!--Animations-->
+        <!--Hamburger-->
         <script>
-            document.addEventListener("DOMContentLoaded", function() {
-            const hamburgerButton = document.getElementById("hamburger");
-            const navList = document.querySelector("nav ul");
+            document.addEventListener("DOMContentLoaded", function () {
+                const btn = document.getElementById("hamburger");
+                const menu = document.querySelector(".mobile-menu");
 
-            hamburgerButton.addEventListener("click", function() {
-                navList.classList.toggle("open");
-                hamburgerButton.classList.toggle("open");
+                btn.addEventListener("click", () => {
+                    menu.classList.toggle("hidden");
+                    btn.classList.toggle("clicked");
+                });
             });
-            });
-
         </script>
 
     </head>
     <body>
-        <!-- nav bar -->
-        <nav class="bg-darkBlue p-4">
+        <!-- nav bar -->        
+        <nav class="bg-darkBlue p-4 sticky-nav">
             <div class="container mx-auto flex justify-between items-center">
                 <img src="img/logo/logo.png" alt="Logo Super Automotriz MG" class="w-35 h-20">
-                <ul class="flex space-x-10 hidden lg:flex">
+                <button id="hamburger" class="lg:hidden text-white">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <ul class="flex space-x-10 hidden lg:flex" id="navList">
                     <li><a href="#" class="text-white font-bold hover:text-yellowAccent">INICIO</a></li>
                     <li><a href="#servicios" class="text-white font-bold hover:text-yellowAccent">SERVICIOS</a></li>
                     <li><a href="#nosotros" class="text-white font-bold hover:text-yellowAccent">NOSOTROS</a></li>
@@ -117,17 +119,31 @@
                 </ul>
             </div>
         </nav>
+        <!-- Mobile menu -->
+        <div class="bg-darkBlue text-white shadow-lg mobile-menu hidden sticky-nav-menu">
+            <div class="max-w-6xl mx-auto px-4 text-justify">
+                <ul class="flex flex-col space-y-4 py-4">
+                    <li><a href="#" class="font-semibold hover:text-yellowAccent transition duration-300">INICIO</a></li>
+                    <li><a href="#servicios" class="font-semibold hover:text-yellowAccent transition duration-300">SERVICIOS</a></li>
+                    <li><a href="#nosotros" class="font-semibold hover:text-yellowAccent transition duration-300">NOSOTROS</a></li>
+                    <li><a href="#contacto" class="font-semibold hover:text-yellowAccent transition duration-300">CONTACTO</a></li>
+                </ul>
+            </div>
+        </div>
+
+        
+        
         
 
         <!-- header -->
         <div class="relative">
-            <img src="img/background/outside2.png" alt="Imagen del taller mecánico" style="height: 100vh; object-fit: cover;">
+            <img src="img/background/outside2.png" alt="Imagen del taller mecánico" style="height: 100vh; object-fit: cover; margin-top: 5rem;">
             <div class="absolute inset-0 bg-darkBlue opacity-50"></div>
             <div class="absolute inset-0 flex justify-center items-center">
                 <div class="container-header">
                     <div class="text-white text-center">
-                        <h1 class="lg:text-6xl font-extrabold uppercase text-header animate__animated animate-on-scroll" data-aos="animate__zoomInDown">Tu confianza en el taller, nuestra excelencia en cada reparación</h1>
-                        <p class="mt-6 font-semibold text-2xl  animate__animated animate-on-scroll" data-aos="animate__zoomInUp">Servicios de mecánica</p>
+                        <h1 class="sm:text-2xl md:text-3xl lg:text-6xl font-extrabold uppercase text-header animate__animated animate-on-scroll" data-aos="animate__zoomInDown">Tu confianza en el taller, nuestra excelencia en cada reparación</h1>
+                        <p class="mt-6 font-semibold lg:text-2xl  animate__animated animate-on-scroll" data-aos="animate__zoomInUp">Servicios de mecánica</p>
                     </div>
                 </div>
             </div>
@@ -486,6 +502,5 @@
             const currentYear = new Date().getFullYear();
             document.getElementById("currentYear").textContent = currentYear;
         </script>
-        
     </body>
 </html>
