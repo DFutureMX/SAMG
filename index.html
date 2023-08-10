@@ -1,9 +1,40 @@
 <!doctype html>
 <html>
     <head>
+        <!--Basics-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!--SEO-->
+        <title>Super Automotriz MG</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/logo/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/logo/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/logo/favicon-16x16.png">
+        <link rel="manifest" href="/img/logo/site.webmanifest">
+        <link rel="mask-icon" href="/img/logo/safari-pinned-tab.svg" color="#fdcd02">
+        <link rel="shortcut icon" href="/img/logo/favicon.ico">
+        <meta name="msapplication-TileColor" content="#333333">
+        <meta name="msapplication-config" content="/img/logo/browserconfig.xml">
+        <meta name="theme-color" content="#333333">
+
+        <meta name="description" content="Servicios de mecánica automotriz de alta calidad en Monterrey, México. Expertos en afinación, frenos, dirección y suspensión. Contáctanos para una excelencia mecánica.">
+        <meta name="keywords" content="mecánica automotriz, afinación, frenos, dirección y suspensión, reparación de autos, taller mecánico, Monterrey, México, taller mecanico cumbres, afinacion monterrey">
+        <meta name="author" content="Super Automotriz MG">
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Super Automotriz MG">
+        <meta property="og:description" content="Servicios de mecánica automotriz de alta calidad en Monterrey, México. Expertos en afinación, frenos, dirección y suspensión. Contáctanos para una excelencia mecánica.">
+        <meta property="og:image" content="https://example.com/img/og-image.jpg">
+        <meta property="og:url" content="https://superautomotrizmg.com/img/background/socialMedia.png">
+        <meta property="og:type" content="website">
+        
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Super Automotriz MG">
+        <meta name="twitter:description" content="Servicios de mecánica automotriz de alta calidad en Monterrey, México. Expertos en afinación, frenos, dirección y suspensión. Contáctanos para una excelencia mecánica.">
+        <meta name="twitter:image" content="https://superautomotrizmg.com/img/background/socialMedia.png">
+
+        <!--Font-->
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
         <!--Custom css-->
@@ -58,15 +89,27 @@
             });
         </script>
 
-        <title>Super Automotriz MG</title>
+        <!--Animations-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            const hamburgerButton = document.getElementById("hamburger");
+            const navList = document.querySelector("nav ul");
+
+            hamburgerButton.addEventListener("click", function() {
+                navList.classList.toggle("open");
+                hamburgerButton.classList.toggle("open");
+            });
+            });
+
+        </script>
 
     </head>
     <body>
         <!-- nav bar -->
-        <nav class="bg-darkBlue 500 p-4">
+        <nav class="bg-darkBlue p-4">
             <div class="container mx-auto flex justify-between items-center">
                 <img src="img/logo/logo.png" alt="Logo Super Automotriz MG" class="w-35 h-20">
-                <ul class="flex space-x-10">
+                <ul class="flex space-x-10 hidden lg:flex">
                     <li><a href="#" class="text-white font-bold hover:text-yellowAccent">INICIO</a></li>
                     <li><a href="#servicios" class="text-white font-bold hover:text-yellowAccent">SERVICIOS</a></li>
                     <li><a href="#nosotros" class="text-white font-bold hover:text-yellowAccent">NOSOTROS</a></li>
@@ -74,16 +117,17 @@
                 </ul>
             </div>
         </nav>
+        
 
         <!-- header -->
         <div class="relative">
-            <img src="img/background/outside2.png" alt="Imagen del taller mecánico" class="w-full ">
+            <img src="img/background/outside2.png" alt="Imagen del taller mecánico" style="height: 100vh; object-fit: cover;">
             <div class="absolute inset-0 bg-darkBlue opacity-50"></div>
             <div class="absolute inset-0 flex justify-center items-center">
                 <div class="container-header">
                     <div class="text-white text-center">
                         <h1 class="lg:text-6xl font-extrabold uppercase text-header animate__animated animate-on-scroll" data-aos="animate__zoomInDown">Tu confianza en el taller, nuestra excelencia en cada reparación</h1>
-                        <p class="mt-6 font-semibold text-2xl">Servicios de mecánica</p>
+                        <p class="mt-6 font-semibold text-2xl  animate__animated animate-on-scroll" data-aos="animate__zoomInUp">Servicios de mecánica</p>
                     </div>
                 </div>
             </div>
@@ -245,7 +289,7 @@
                                 <!-- Column 2 -->
                                 <div class="">
                                     <div class="" id="nosotros">
-                                        <p class="text-4xl font-bold uppercase text-darkBlue border-b-4 border-yellowAccent">Nuestros servicios</p>
+                                        <p class="text-4xl font-bold uppercase text-darkBlue border-b-4 border-yellowAccent animate__animated animate-on-scroll" data-aos="animate__fadeInLeft">Nuestros servicios</p>
                                     </div>
                                 </div>
                             </div>
@@ -320,7 +364,7 @@
                                 <!-- Column 2 -->
                                 <div class="">
                                     <div class="" id="contacto">
-                                        <p class="text-4xl font-bold uppercase text-darkBlue border-b-4 border-yellowAccent text-right">Contáctanos para una excelencia mecánica</p>
+                                        <p class="text-4xl font-bold uppercase text-darkBlue border-b-4 border-yellowAccent text-right animate__animated animate-on-scroll" data-aos="animate__fadeInRight">Contáctanos para una excelencia mecánica</p>
                                     </div>
                                 </div>
                             </div>
@@ -427,12 +471,21 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <p class="text-center text-sm">&copy; <span id="currentYear"></span> Super Automotriz MG. Todos los derechos reservados.</p>
+            </div>
         </div>
 
         <!--Whatsapp icon-->
         <a href="https://api.whatsapp.com/send?phone=5218122004116&text=Hola!%20Me%20interesan%20los%20servicios%20de%20mec%C3%A1nica%20que%20ofrecen%20%F0%9F%91%A9%E2%80%8D%F0%9F%94%A7" class="float" target="_blank">
             <i class="fa fa-whatsapp my-float"></i>
         </a>
+
+        <!-- Add this script at the end of your <body> tag -->
+        <script>
+            const currentYear = new Date().getFullYear();
+            document.getElementById("currentYear").textContent = currentYear;
+        </script>
         
     </body>
 </html>

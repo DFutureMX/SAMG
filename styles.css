@@ -12,11 +12,37 @@ img{
 }
 
 
-
-.container-header{
-    margin: 20rem;
-    
+/* Responsive Hamburger Menu */
+#hamburger {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
 }
+
+#hamburger:focus {
+    outline: none;
+}
+
+#hamburger.open {
+    transform: rotate(90deg);
+}
+
+/* Adjust navigation list for smaller screens */
+@media (max-width: 767px) {
+
+}
+
+@media (min-width: 768px) {
+    .container-header{
+        margin: 20rem;
+        
+    }
+}
+
+
+
 
 
 .text-header{
